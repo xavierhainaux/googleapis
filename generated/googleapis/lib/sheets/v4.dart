@@ -2403,16 +2403,16 @@ class Color {
 
   Color.fromJson(core.Map _json) {
     if (_json.containsKey("alpha")) {
-      alpha = _json["alpha"];
+      alpha = _json["alpha"].toDouble();
     }
     if (_json.containsKey("blue")) {
-      blue = _json["blue"];
+      blue = _json["blue"].toDouble();
     }
     if (_json.containsKey("green")) {
-      green = _json["green"];
+      green = _json["green"].toDouble();
     }
     if (_json.containsKey("red")) {
-      red = _json["red"];
+      red = _json["red"].toDouble();
     }
   }
 
